@@ -21,6 +21,7 @@ module CFoundry::V1
     attribute :env,       [:string], :default => []
     attribute :uris,      [:string], :default => []
     attribute :services,  [:string], :default => []
+    attribute :buildpack, :string,   :default => nil
 
     attribute :console, :boolean, :default => false,
               :read => [:meta, :console], :write => :console
